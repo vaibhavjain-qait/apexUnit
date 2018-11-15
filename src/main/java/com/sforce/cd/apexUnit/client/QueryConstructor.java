@@ -37,7 +37,7 @@ public class QueryConstructor {
 	public static String generateQueryToFetchApexClassesBasedOnRegex(String namespace, String regex) {
 		String processedRegex = processRegexForSoqlQueries(regex);
 		String soql = "SELECT Id , Name FROM ApexClass WHERE NamespacePrefix ="+ escapeSingleQuote(namespace) +" AND "
-				+ "Name like " + escapeSingleQuote(processedRegex);
+				+ "Name like " + escapeSingleQuote(processedRegex);				
 		return soql;
 	}
 
@@ -98,7 +98,7 @@ public class QueryConstructor {
 	public static String generateQueryToFetchApexClass(String namespace, String apexClassName) {
 		String soql = "";
 		if (apexClassName != null && !apexClassName.equals("")) {
-			soql = "SELECT Id, Name FROM ApexClass WHERE NamespacePrefix ="+ escapeSingleQuote(namespace) +" AND "
+			soql = "SELECT Id, Name FROM ApexClass WHERE NamespacePrefix ="+ escapeSingleQuote("vjdev") +" AND "
 					+ "Name = " + escapeSingleQuote(apexClassName);
 		}
 		return soql;
