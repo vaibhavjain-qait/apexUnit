@@ -1,0 +1,6 @@
+SimpleClass1
+AuthorPageConfig
+AuthorPageConfigTest
+SampleClass2
+
+HelloWorldTrigger
