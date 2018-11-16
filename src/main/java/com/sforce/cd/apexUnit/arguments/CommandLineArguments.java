@@ -60,9 +60,9 @@ public class CommandLineArguments {
 			+ "All classes beginning with this parameter in the org will be used to compute team code coverage", variableArity = true)
 	static private String sourceRegex;
 	@Parameter(names = ORG_WIDE_CODE_COVERAGE_THRESHOLD, description = "Org wide minimum code coverage required to meet the code coverage standards", validateWith = PercentageInputValidator.class, variableArity = true)
-	static private Integer orgWideCodeCoverageThreshold = 75;
+	static private Integer orgWideCodeCoverageThreshold = 0;
 	@Parameter(names = TEAM_CODE_COVERAGE_THRESHOLD, description = "Team wide minimum code coverage required to meet the code coverage standards", validateWith = PercentageInputValidator.class, variableArity = true)
-	static private Integer teamCodeCoverageThreshold = 75;
+	static private Integer teamCodeCoverageThreshold = 0;
 	@Parameter(names = MAX_TEST_EXECUTION_TIME_THRESHOLD, description = "Maximum execution time(in minutes) for a test before it gets aborted", validateWith = PositiveIntegerValidator.class, variableArity = true)
 	static private Integer maxTestExecTimeThreshold;
 	@Parameter(names = ORG_CLIENT_ID, description = "Client ID associated with the org. "
