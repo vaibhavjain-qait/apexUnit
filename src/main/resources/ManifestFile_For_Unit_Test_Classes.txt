@@ -1,1 +1,1 @@
-CleanUpRecordsTest
+BuggerSelfRegControllerTest
