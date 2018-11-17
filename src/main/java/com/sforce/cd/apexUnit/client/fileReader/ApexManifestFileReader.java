@@ -128,7 +128,7 @@ public class ApexManifestFileReader {
 		
 		String soql = QueryConstructor.generateQueryToFetchApexClass(namespaceAndName.get("namespace"), 
 				namespaceAndName.get("name"));
-		LOG.warn("SOQL-->"+soql);		
+		LOG.warn("Resulting SOQL-->"+soql);		
 		// query using WSC
 		tempTestClassId = ApexClassFetcherUtils.fetchAndAddToMapApexClassIdBasedOnName(
 				ConnectionHandler.getConnectionHandlerInstance().getConnection(), soql);
