@@ -113,10 +113,14 @@ public class ApexCodeCoverageReportGenerator {
 		appendTag(htmlBuilder, "header", "Apex Test Report: ");
 		appendLineSpaces(htmlBuilder, 2);
 		String workingDir = System.getProperty("user.dir");
+		System.err.println("workingDir-->"+workingDir);
 		String apexUnitTestReportPath = "";
 		if (!workingDir.contains("jenkins")) {
+			System.out.println ("I am here in IF");
 			apexUnitTestReportPath = workingDir + System.getProperty("file.separator") + "ApexUnitReport.xml";
+			System.err.println("apexUnitTestReportPath-->"+apexUnitTestReportPath);
 		} else {
+			System.out.println ("I am here in ELSE");
 			int lastIndexOfSlash = workingDir.lastIndexOf('/');
 			String jobName = workingDir.substring(lastIndexOfSlash + 1);
 			apexUnitTestReportPath = "https://jenkins.internal.salesforce.com/job/" + jobName
