@@ -1,2 +1,2 @@
-DataCategoryInfo,
+DataCategoryInfo
 AutoCompleteV2_Con

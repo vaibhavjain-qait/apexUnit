@@ -1,2 +1,2 @@
-DataCategoryInfoTestClass,
+DataCategoryInfoTestClass
 AutocompleteV2_Con_Test
